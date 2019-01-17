@@ -1,0 +1,26 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>UNCT Website Manual: {{ page.title }}</title>
+  <meta name="description" content="UNCT Website Manual">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700|Merriweather:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.url }}/assets/stylesheets/style.css">
+
+</head>
+
+<body>
+  {% include header.html %}
+  <section class="title container">
+    <h1 class="title">{{ page.title }}
+  </section>
+  <section class="content container">
+    {{ content }}
+  </section>
+  {% include footer.html %}
+  <script src="js/scripts.js"></script>
+</body>
+</html>
