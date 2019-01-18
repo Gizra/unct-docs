@@ -4,35 +4,42 @@ section: "Site Admin/Developer Functions"
 title: Adding Users to the Site
 ---
 
-The login for your country team site is not accessible through a link on the site interface, but rather through a custom URL.
+User management is designated to the "Developer" role only and can be accessed at `/admin/people`
 
-To login to the site:
-1. Go to `<your domain>/user`
-2. Enter your username and  password
-3. Click Log in button
+## User Fields
+
+A user should be given at the minimum a username and a password, and can also be designated with an email
+
+The Site language should be set to the default language in which the user will publish content, and the timezone should be set to the user's timezone.
+
+
+## User Roles
+
+There are three roles that are active on the site:
+
+- **Developer**: This role has access to all site settings and actions. It is a high-level privilege and should only be given to highly-trusted individuals. Because it has the ability to set the site domain and unpublish/delete a country team, this role is capable of taking a site offline.
+
+- **Content Editor**: This role is for site admins who are to have all control over content on the site. They can:
+    - create, edit, delete and publish content
+    - manually sync content (SDGs and Contacts)
+    - edit most Country Team settings and set featured and homepage content
+
+- **Content Creator**: This role is for writers of content. They can create and edit their own content and save as drafts (but not publish).
+
+## Adding a User to a Country Team
+
+In order to work with content for a particular country team, a user needs to be added to that team. A user can be part of one or more country teams. Users with the "developer" role have default access to all groups.
+
+Group membership to the country team is controlled on the "Group" tab on the Country Team admin page.
 
 {% include media.html
-   image_path="assets/images/user-login.jpg"
+   image_path="assets/images/country-group.jpg"
 %}
 
-The "Reset your password" feature is not functional for this site. To reset your password, you should consult a site administrator.
-
-## Changing your Password
-
-To make changes in your user settings, click your username in the admin toolbar and the click "Edit profile."
+From the Group tab, click on "Members", then "Add Members" and add users to the country team group using the dialogue.
 
 {% include media.html
-   image_path="assets/images/user-profile-edit.jpg"
+   image_path="assets/images/add-member.jpg"
 %}
 
-
-
-
-
-
-
-To change your password:
-1. Click on My account.
-2. Click Edit.
-3. Enter new password in both fields: Password and Confirm password.
-4. Click Save.
+Users do not need to have a role in the group to be able to view and edit content for the country team.

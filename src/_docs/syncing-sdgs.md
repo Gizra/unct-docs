@@ -4,21 +4,14 @@ section: "Country Settings and Content"
 title: Syncing SDGs
 ---
 
-Under **Site Settings**, expand the **Homepage** box.
+SDG information is manually synced from the UNInfo API. A sync can be performed on the SDG Content page (`/admin/content/sdgs`)
 
 {% include media.html
-   image_path="assets/images/homepage-settings.jpg"
+   image_path="assets/images/sync-sdgs.jpg"
 %}
 
-From this section, you can set the featured content for the homepage:
-
-
-**FEATURED: HOMEPAGE CONTENT**: Select an article that will be featured on the homepage.
-
-**FEATURED IMAGE**: Select and image which will be used as a background to the featured article.
-
-### Example of featured article on the homepage
+After performing the sync, data from the UNInfo API will be displayed on the relevant SDG page.
 
 {% include media.html
-   image_path="assets/images/homepage-sample.jpg"
+   image_path="assets/images/sdgs-details.jpg"
 %}

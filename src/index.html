@@ -3,14 +3,47 @@ layout: default
 title: Table of Contents
 ---
 
-{% assign sections = site.docs | map: "section" | uniq %}
-{% for section in sections %}
-  <h3>{{ section }}</h3>
-  <ul>
-    {% for doc in site.docs %}
-      {% if doc.section contains section %}
-        <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endfor %}
+<h3>General</h3>
+<ul>
+  {% for doc in site.docs %}
+    {% if doc.section contains "General" %}
+      <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Creating and Editing Content</h3>
+<ul>
+  {% for doc in site.docs %}
+    {% if doc.section contains "Creating and Editing Content" %}
+      <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Country Settings and Content</h3>
+<ul>
+  {% for doc in site.docs %}
+    {% if doc.section contains "Country Settings and Content" %}
+      <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Media Handling</h3>
+<ul>
+  {% for doc in site.docs %}
+    {% if doc.section contains "Media Handling" %}
+      <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Site Admin/Developer Functions</h3>
+<ul>
+  {% for doc in site.docs %}
+    {% if doc.section contains "Site Admin/Developer Functions" %}
+      <li><a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
