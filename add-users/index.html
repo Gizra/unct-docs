@@ -17,7 +17,7 @@
   <div class="header container">
     <div class="site-logo">
       <a href="/">
-        <img src="/assets/images/UNDG_logo.svg">
+        <img src="https://gizra.github.io/unct-docs/assets/images/UNDG_logo.svg">
       </a>
     </div>
     <div class="site-title">
@@ -30,14 +30,37 @@
     <h1 class="title">Adding Users to the Site
   </section>
   <section class="content container">
-    <p>The login for your country team site is not accessible through a link on the site interface, but rather through a custom URL.</p>
+    <p>User management is designated to the “Developer” role only and can be accessed at <code class="highlighter-rouge">/admin/people</code></p>
 
-<p>To login to the site:</p>
-<ol>
-  <li>Go to <code class="highlighter-rouge">&lt;your domain&gt;/user</code></li>
-  <li>Enter your username and  password</li>
-  <li>Click Log in button</li>
-</ol>
+<h2 id="user-fields">User Fields</h2>
+
+<p>A user should be given at the minimum a username and a password, and can also be designated with an email</p>
+
+<p>The Site language should be set to the default language in which the user will publish content, and the timezone should be set to the user’s timezone.</p>
+
+<h2 id="user-roles">User Roles</h2>
+
+<p>There are three roles that are active on the site:</p>
+
+<ul>
+  <li>
+    <p><strong>Developer</strong>: This role has access to all site settings and actions. It is a high-level privilege and should only be given to highly-trusted individuals. Because it has the ability to set the site domain and unpublish/delete a country team, this role is capable of taking a site offline.</p>
+  </li>
+  <li><strong>Content Editor</strong>: This role is for site admins who are to have all control over content on the site. They can:
+    <ul>
+      <li>create, edit, delete and publish content</li>
+      <li>manually sync content (SDGs and Contacts)</li>
+      <li>edit most Country Team settings and set featured and homepage content</li>
+    </ul>
+  </li>
+  <li><strong>Content Creator</strong>: This role is for writers of content. They can create and edit their own content and save as drafts (but not publish).</li>
+</ul>
+
+<h2 id="adding-a-user-to-a-country-team">Adding a User to a Country Team</h2>
+
+<p>In order to work with content for a particular country team, a user needs to be added to that team. A user can be part of one or more country teams. Users with the “developer” role have default access to all groups.</p>
+
+<p>Group membership to the country team is controlled on the “Group” tab on the Country Team admin page.</p>
 
 <div class="image-container ">
 
@@ -45,18 +68,14 @@
 
   
   <div class="image">
-    <img src="https://gizra.github.io/unct-docs/assets/images/user-login.jpg" />
+    <img src="https://gizra.github.io/unct-docs/assets/images/country-group.jpg" />
   </div>
   
 
   
 </div>
 
-<p>The “Reset your password” feature is not functional for this site. To reset your password, you should consult a site administrator.</p>
-
-<h2 id="changing-your-password">Changing your Password</h2>
-
-<p>To make changes in your user settings, click your username in the admin toolbar and the click “Edit profile.”</p>
+<p>From the Group tab, click on “Members”, then “Add Members” and add users to the country team group using the dialogue.</p>
 
 <div class="image-container ">
 
@@ -64,25 +83,19 @@
 
   
   <div class="image">
-    <img src="https://gizra.github.io/unct-docs/assets/images/user-profile-edit.jpg" />
+    <img src="https://gizra.github.io/unct-docs/assets/images/add-member.jpg" />
   </div>
   
 
   
 </div>
 
-<p>To change your password:</p>
-<ol>
-  <li>Click on My account.</li>
-  <li>Click Edit.</li>
-  <li>Enter new password in both fields: Password and Confirm password.</li>
-  <li>Click Save.</li>
-</ol>
+<p>Users do not need to have a role in the group to be able to view and edit content for the country team.</p>
 
   </section>
   <footer>
   <div class="footer container">
-    Copyright 2018, Gizra.
+    Copyright 2018 - 2019, Gizra.
   </div>
 </footer>
 

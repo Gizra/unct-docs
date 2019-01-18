@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>UNCT Website Manual: Setting the Domain</title>
+  <title>UNCT Website Manual: Site Settings for Developers</title>
   <meta name="description" content="UNCT Website Manual">
   <link href="https://fonts.googleapis.com/css?family=Lato:700|Merriweather:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://gizra.github.io/unct-docs/assets/stylesheets/style.css">
@@ -17,7 +17,7 @@
   <div class="header container">
     <div class="site-logo">
       <a href="/">
-        <img src="/assets/images/UNDG_logo.svg">
+        <img src="https://gizra.github.io/unct-docs/assets/images/UNDG_logo.svg">
       </a>
     </div>
     <div class="site-title">
@@ -27,62 +27,27 @@
 </header>
 
   <section class="title container">
-    <h1 class="title">Setting the Domain
+    <h1 class="title">Site Settings for Developers
   </section>
   <section class="content container">
-    <p>The login for your country team site is not accessible through a link on the site interface, but rather through a custom URL.</p>
+    <p>The following site settings are available only to developers as they can impact critical functions of the site.</p>
 
-<p>To login to the site:</p>
-<ol>
-  <li>Go to <code class="highlighter-rouge">&lt;your domain&gt;/user</code></li>
-  <li>Enter your username and  password</li>
-  <li>Click Log in button</li>
-</ol>
+<p><strong>DOMAIN</strong>: This should be set to the domain of the live site (e.g. turkemenistan.un.org)</p>
 
-<div class="image-container ">
+<p><strong>COUNTRY CODE (ISO2 CODE)</strong>: The ISO2 code that controls which data is pulled in from external APIs.</p>
 
-  
+<p><strong>COUNTRY CODE (ISO3 CODE)</strong>: The ISO3 code that controls which data is pulled in from external APIs.</p>
 
-  
-  <div class="image">
-    <img src="https://gizra.github.io/unct-docs/assets/images/user-login.jpg" />
-  </div>
-  
+<p><strong>COUNTRY DEFAULT LANGUAGE</strong>: The default language for the site and the language in which content will originally be published. All translated content must have a default language original. <em>Changing a site’s default language after the creation of content can have unpredicted consequences.</em></p>
 
-  
-</div>
+<p><strong>GOOGLE ANALYTICS PROPERTY ID</strong>: The property ID from Google Analytics to enable tracking.</p>
 
-<p>The “Reset your password” feature is not functional for this site. To reset your password, you should consult a site administrator.</p>
-
-<h2 id="changing-your-password">Changing your Password</h2>
-
-<p>To make changes in your user settings, click your username in the admin toolbar and the click “Edit profile.”</p>
-
-<div class="image-container ">
-
-  
-
-  
-  <div class="image">
-    <img src="https://gizra.github.io/unct-docs/assets/images/user-profile-edit.jpg" />
-  </div>
-  
-
-  
-</div>
-
-<p>To change your password:</p>
-<ol>
-  <li>Click on My account.</li>
-  <li>Click Edit.</li>
-  <li>Enter new password in both fields: Password and Confirm password.</li>
-  <li>Click Save.</li>
-</ol>
+<p>A developer can also unpublish the country team which will have the effect of unpublishing the country site.</p>
 
   </section>
   <footer>
   <div class="footer container">
-    Copyright 2018, Gizra.
+    Copyright 2018 - 2019, Gizra.
   </div>
 </footer>
 
